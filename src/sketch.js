@@ -45,7 +45,7 @@ function updateGrid() {
 function setup() {
   const canvaSize = min(windowWidth / 1.2, windowHeight / 1.2);
   createCanvas(canvaSize, canvaSize);
-  noLoop();
+  // noLoop();
   frameRate(1);
   colorMode(HSB);
   background("white");
