@@ -23,6 +23,18 @@ function Mirror2DX(original) {
 }
 
 /**
+ * Push 2d Array in the X axis
+ */
+
+function Push2DX(original, push) {
+  let newArray = Array2D(original.length);
+  for (let i = 0; i < original.length; i++) {
+    newArray[i + push] = original[i];
+  }
+  return newArray;
+}
+
+/**
  * Mask array
  */
 
@@ -35,5 +47,14 @@ function Mask2D(maskOn, mask) {
       }
     }
   }
-  return newArray
+  return newArray;
+}
+
+/**
+ *
+ * Round random function
+ *
+ */
+function r(p1 = 0, p2 = 10) {
+  return round(random(p1, p2));
 }
